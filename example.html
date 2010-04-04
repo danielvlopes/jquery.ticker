@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+  <head>
+    <title>jQuery Ticker</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+      body { background: #eee; font-family: monaco, 'courier new', helvetica, sans-serif; }
+      #container { width: 900px; margin: 50px auto; background: #fff; padding: 25px; border: 1px solid #ccc; }
+      h1 { font-size: 18px; margin-bottom: 10px; padding: 7px 0 7px 0; }
+      div { margin-bottom: 35px; }
+
+      .tickerbox {
+        width:770px;
+        margin:10px;
+        padding:0;height:300px;
+      }
+
+      .tickerbox ul {
+        width:750px; 
+        position:relative;
+      }
+
+      .tickerbox li {
+        width:100%;
+        list-style: none inside;
+        position:absolute;
+        overflow:hidden
+      }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.ticker.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        $("#ticker").ticker();
+      });      
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>jQuery Ticker</h1>
+
+      <div class="tickerbox">
+        <ul id="ticker">
+          <li><img src="http://content.onlineagency.com/sites/17997/images/ca_banner6.jpg"></li>
+          <li><img src="http://content.onlineagency.com/sites/17997/images/ca_banner4.jpg"></li>
+          <li><img src="http://content.onlineagency.com/sites/17997/images/ca_banner3.jpg"></li>
+        </ul>
+      </div>
+  </body>
+</html>
